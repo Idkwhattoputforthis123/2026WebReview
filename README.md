@@ -85,3 +85,52 @@ li is listed item
 
 used for items with no ranked order is unordered
 used for ranking items is used with ordered list
+
+
+links and images 
+
+how do i create a link to sll boces.org?? 
+step one 
+<a href="https://sllboces.org" target="_blank"> SLL BOCES </a>
+
+how do i create a link thats in the same directory that our html file is in
+<a href="about.html">lala</a>
+
+what if its in a content folder??
+<a href="content/about.html">lala</a>
+
+a link to another section of the page
+<a href="#about">lala</a>
+
+<a href="mailto:student@sllboces.org">lala</a>
+
+
+images 
+
+What are the two reqjuired attributes for the <img> tags?
+alt --> accessibility text 
+src --> file path to the image 
+
+<img src="images/hero.jpg" alt="ufhurfbeuhfuyrbgurebg">
+
+<img src="images/hero.png" alt="ufhurfbeuhfuyrbgurebg">
+
+What is hot-linking an image?? 
+<img src="images/hero.jpg" alt="ufhurfbeuhfuyrbgurebg">
+
+
+part 3 
+what is a samantic HTML Element?
+it describes the meaning of the content inside of the element not just the way it looks.
+reasons why we use sementic elements
+organization
+effects the document object model
+accsessibility allows screen readers 
+
+layout semantic elements heade, nav, main, section, aside, footer
+
+content semantic elements
+figure, figcaption,image with a caption and fig caption is the caption for a figure image 
+time a date or time 
+address contact address info
+mark highlighed text
