@@ -37,6 +37,8 @@ HTML
         light blue:    #93a4cf
         Light Green:   #92c3b2
 ----------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
      /* SLL BOCES Brand Colors*/
      --color-blue: #00539a;
@@ -50,6 +52,7 @@ HTML
      /* Topagrophy */
      --font-main: 'EB Garamound', Garamound, serif;
      --font-bold: 'Oswald', Arial, sans-serif;
+     --font-reg: 'Calm', 'Ariel', 'sans-serif';
      /* spacing scale */
     --spacing-sm: 0.75rem;
     --spacing-md: 1.5rem;
@@ -134,6 +137,7 @@ header {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    font-family: var(--font-bold);
 }
 
 /* Dark overlay on the hero image for text readability */
@@ -156,65 +160,115 @@ header {
 }
 
 .hero-content h1 {
-    
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-     /* TODO */ ;
+     font-size: 1.4rem;
+     color: var(--color-gold);
+     margin-bottom: 1.5rem;
+     z-index: 1;
+     padding-top: 15rem;
 }
 
 .btn {
-     /* TODO */ ;
+     display: inline-block;
+     background-color: var(--color-gold);
+     color: var(--color-blue);
+     padding: 0.02rem 2rem;
+     border-radius: 4px;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 1.1rem;
+     transition: background-color 0.5s;
 }
 
 .btn:hover {
-     /* TODO */ ;
+     background-color: var(--colorlitgreen);
 }
 
 /* ===============================================
     MAIN CONTENT SECTIONS
     =============================================== */
 main {
-     /* TODO */ ;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 2rem;
+     font-family: var(--font-reg);
 }
 
+main p{
+     margin-bottom: 2rem;
+}
+
+main #about p{
+     max-width: 880px;
+}
+
+main #about p:first-child {
+     font-weight: bold;
+}
 section {
-     /* TODO */ ;
+     padding: 4rem 0;
+     border-bottom: 2px solid var(--color-litblue);
+     font-family: var(--font-bold);
 }
 
 section:last-child {
-     /* TODO */ ;
+border-bottom: none; 
 }
 
 .section-title {
-     /* TODO */ ;
+     font-size: 2rem;
+     color: var(--color-dark);
+     margin-bottom: 0.25rem;
+     padding-bottom: 0.5rem;
+     border-left: 5px solid var(--color-green);
+     padding-left: 1rem;
+
 }
 
 .section-subtitle {
-     /* TODO */ ;
+     color: var(--color-litblue);
+     margin-bottom: 2rem;
+     font-style: italic;
 }
 
 /* ===============================================
     COURSES GRID — What I Learned
     =============================================== */
 .courses-grid {
-     /* TODO */ ;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
+     
 }
 
 .course-card {
-     /* TODO */ ;
+     flex: 1 1 220px;
+     background: var(--color-white);
+     border: 2px solid var(--color-litblue);
+     border-top: 5px solid var(--color-green);
+     border-radius: 6px;
+     padding: 1.5rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3)
 }
 
 .course-card h3 {
-     /* TODO */ ;
+     color: var(--color-dark);
+     margin-bottom: 0.75rem;
 }
 
 .course-card ul {
-     /* TODO */ ;
+     padding-left: 1.2rem;
 }
 
 .course-card li {
-     /* TODO */ ;
+     margin-bottom: 0.4rem;
+     font-size: 0.95rem;
 }
 
 /* ===============================================
