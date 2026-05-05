@@ -138,6 +138,8 @@ header {
     background-position: center;
     min-height: 100vh;
     font-family: var(--font-bold);
+    overflow: hidden;
+   
 }
 
 /* Dark overlay on the hero image for text readability */
@@ -275,65 +277,92 @@ border-bottom: none;
     PROJECTS SECTION
     =============================================== */
 .projects-grid {
-     /* TODO */ ;
+     display: flex;
+     flex: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
 }
 
 .project-card {
-     /* TODO */ ;
+     flex: 280px;
+     border: 4px double var(--color-dark);
+     border-radius: 6px;
+     overflow: hidden;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .project-card-header {
-     /* TODO */ ;
+    background-color: var(--color-dark);
+    padding: 1rem 1.2rem;
+    color: var(--color-gold);
 }
 
-.project-card-header h3 {
-     /* TODO */ ;
-}
 
 .project-card-body {
-     /* TODO */ ;
+     padding: 1rem 1.2rem;
 }
 
 .project-card-body p {
-     /* TODO */ ;
+     margin-bottom: 1rem;
+     font-size: 0.95rem;
 }
 
 .project-link {
-     /* TODO */ ;
+     display: inline-block;
+     background-color: var(--color-dark);
+     color: var(--color-white);
+     padding: 0.4rem 1rem;
+     text-decoration: none;
+     font-size: 0.9rem;
+     border-radius: 60px;
+     transition: background-color 0.5s;
+     transition: color 0.5s;
 }
 
 .project-link:hover {
-     /* TODO */ ;
+     background-color: var(--color-blue);
+     color: var(--color-gold);
 }
 
 /* ===============================================
     SKILLS TABLE
     =============================================== */
 .skills-table {
-     /* TODO */ ;
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: var(--spacing-sm)
+}
+
+.skills-table th, 
+.skills-table td {
+     padding: 0.6rem 1rem;
+     border: 1px solid #ddd;
+     text-align: left;
 }
 
 .skills-table th {
-     /* TODO */ ;
-}
-
-.skills-table td {
-     /* TODO */ ;
+     background-color: var(--color-dark);
+     color: var(--color-gold);
+     font-weight: 600;
 }
 
 .skills-table tr:nth-child(even) {
-     /* TODO */ ;
+     background-color: var(--color-litblue);
+     color: var(--color-white);
 }
 
 .skills-table tr:hover {
-     /* TODO */ ;
+     background-color: var(--color-blue);
+     color: var(--color-white);
 }
 
 /* ===============================================
     FOOTER — Flexbox Required!
     =============================================== */
 footer {
-     /* TODO */ ;
+     background-color: var(--color-dark);
+     color: var(--color-white);
+     padding: 2.5rem 2rem 1rem;
 }
 
 /* TODO #5: Complete the footer Flexbox layout.
@@ -343,29 +372,51 @@ footer {
     - Space the columns evenly across the footer
     - Add a gap between columns               */
 .footer-container {
-     /* TODO */ ;
+     display: flex;
+     flex: wrap;
+     justify-content: space-between;
+     gap: 2rem;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+.footer-col {
+     min-width: 140px;
+
 }
 
 .footer-col h4 {
-     /* TODO */ ;
+     color: var(--color-gold);
+     margin-bottom: 1rem;
+     font-size: 1.2rem;
+     border-bottom: 1px solid #9c8762;
+     padding-bottom: 0.5rem;
 }
 
 .footer-nav-links {
-     /* TODO */ ;
+     list-style: none;
+     padding: 0;
 }
 
 .footer-nav-links li {
-     /* TODO */ ;
+     margin-bottom: .5rem;
 }
 
 .footer-nav-links a {
-     /* TODO */ ;
+     color: var(--color-white);
+     text-decoration: none;
+     transition: color 0.5s;
 }
 
 .footer-nav-links a:hover {
-     /* TODO */ ;
+    color: var(--color-gold)
 }
 
 .footer-bottom {
-     /* TODO */ ;
+     text-align: center;
+     margin-top: 2rem;
+     padding-top: 1rem;
+     border-top: 1px solid var(--colorlitgreen);
+     font-size: 0.8rem;
+     color: var(--color-dark);
 }
